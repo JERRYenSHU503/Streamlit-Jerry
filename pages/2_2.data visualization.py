@@ -105,7 +105,7 @@ st.code(code_filtered_40_bins, language='python')
 filteredBirds = birds[(birds['MaxBodyMass'] > 1) & (birds['MaxBodyMass'] < 60)]
 fig, ax = plt.subplots(figsize=(12, 12))
 filteredBirds['MaxBodyMass'].plot(kind='hist', bins=40, ax=ax)
-plt.title('筛选后的MaxBodyMass - 40个Bins')
+plt.title('MaxBodyMass - 40 Bins after filtering')
 st.pyplot(fig)
 
 # 2D 直方图
@@ -127,5 +127,5 @@ x = filteredBirds['MaxBodyMass']
 y = filteredBirds['MaxLength']
 fig, ax = plt.subplots(tight_layout=True)
 hist = ax.hist2d(x, y)
-plt.title('MaxBodyMass与MaxLength的2D直方图')
+plt.title('MaxBodyMass and MaxLength 2D Histogram')
 st.pyplot(fig)
