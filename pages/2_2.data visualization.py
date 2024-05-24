@@ -50,9 +50,9 @@ st.write('展示散点图以显示鸟类订单的基本长度分布情况。')
 # 绘制散点图
 fig, ax = plt.subplots(figsize=(12, 8))
 birds.plot(kind='scatter', x='MaxLength', y='Order', ax=ax)
-plt.title('每个订单的最大长度')
-plt.ylabel('订单')
-plt.xlabel('最大长度')
+plt.title('Maximum Order Length')
+plt.ylabel('Order')
+plt.xlabel('Maximum Length')
 st.pyplot(fig)
 
 # 展示和代码直方图
